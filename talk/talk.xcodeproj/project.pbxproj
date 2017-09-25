@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		242EA5461F7363E9007F017B /* ICRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 242EA5451F7363E9007F017B /* ICRecordManager.m */; };
+		242EA5491F736429007F017B /* ICFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 242EA5481F736429007F017B /* ICFileTool.m */; };
+		242EA5591F7365E8007F017B /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 242EA54D1F7365E8007F017B /* amrFileCodec.mm */; };
+		242EA55A1F7365E8007F017B /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242EA54F1F7365E8007F017B /* libopencore-amrnb.a */; };
+		242EA55B1F7365E8007F017B /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242EA5501F7365E8007F017B /* libopencore-amrwb.a */; };
+		242EA55C1F7365E8007F017B /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 242EA5581F7365E8007F017B /* VoiceConverter.mm */; };
+		242EA5601F736E88007F017B /* VoiceHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 242EA55F1F736E88007F017B /* VoiceHud.m */; };
+		242EA5631F73A8A8007F017B /* MessageImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 242EA5621F73A8A8007F017B /* MessageImageCell.m */; };
+		2433EA5D1F6A4BCD0029B8FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA5C1F6A4BCD0029B8FA /* main.m */; };
+		2433EA601F6A4BCD0029B8FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA5F1F6A4BCD0029B8FA /* AppDelegate.m */; };
+		2433EA631F6A4BCD0029B8FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA621F6A4BCD0029B8FA /* ViewController.m */; };
+		2433EA661F6A4BCD0029B8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2433EA641F6A4BCD0029B8FA /* Main.storyboard */; };
+		2433EA681F6A4BCD0029B8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2433EA671F6A4BCD0029B8FA /* Assets.xcassets */; };
+		2433EA6B1F6A4BCD0029B8FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2433EA691F6A4BCD0029B8FA /* LaunchScreen.storyboard */; };
+		2433EA761F6A4BCD0029B8FA /* talkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA751F6A4BCD0029B8FA /* talkTests.m */; };
+		2433EA811F6A4BCD0029B8FA /* talkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA801F6A4BCD0029B8FA /* talkUITests.m */; };
+		2433EA901F6A5C1E0029B8FA /* TalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA8F1F6A5C1E0029B8FA /* TalkViewController.m */; };
+		2433EA951F6A5F250029B8FA /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA921F6A5F250029B8FA /* Message.m */; };
+		2433EA961F6A5F250029B8FA /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA941F6A5F250029B8FA /* MessageCell.m */; };
+		2433EA991F6A6E760029B8FA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433EA981F6A6E760029B8FA /* UIView+Frame.m */; };
+		24384F371F711337004AC411 /* FunctionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24384F361F711337004AC411 /* FunctionsView.m */; };
+		24384F3A1F711453004AC411 /* imageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24384F391F711453004AC411 /* imageCell.m */; };
+		24384F3D1F711476004AC411 /* imageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 24384F3C1F711476004AC411 /* imageButton.m */; };
+		244BA1C31F6F8DD200A25C21 /* InputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 244BA1C21F6F8DD200A25C21 /* InputBar.m */; };
+		2452AC8E1F74D3AC0084FB0B /* MessageVoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2452AC8D1F74D3AC0084FB0B /* MessageVoiceCell.m */; };
+		510CBB220419D532C5D588A0 /* libPods-talkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7B3BB69FB7BC57A0DB37E9 /* libPods-talkUITests.a */; };
+		A1E4AE1AE20460FF4546C11C /* libPods-talkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E09B514D303D4100B8D3752 /* libPods-talkTests.a */; };
+		F24BE8FCF786A65BC02D7857 /* libPods-talk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E87E0B11F113DB77B66A34 /* libPods-talk.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2433EA721F6A4BCD0029B8FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2433EA501F6A4BCC0029B8FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2433EA571F6A4BCC0029B8FA;
+			remoteInfo = talk;
+		};
+		2433EA7D1F6A4BCD0029B8FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2433EA501F6A4BCC0029B8FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2433EA571F6A4BCC0029B8FA;
+			remoteInfo = talk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		242EA5441F7363E9007F017B /* ICRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRecordManager.h; sourceTree = "<group>"; };
+		242EA5451F7363E9007F017B /* ICRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRecordManager.m; sourceTree = "<group>"; };
+		242EA5471F736429007F017B /* ICFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICFileTool.h; sourceTree = "<group>"; };
+		242EA5481F736429007F017B /* ICFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICFileTool.m; sourceTree = "<group>"; };
+		242EA54C1F7365E8007F017B /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		242EA54D1F7365E8007F017B /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		242EA54F1F7365E8007F017B /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		242EA5501F7365E8007F017B /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		242EA5521F7365E8007F017B /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		242EA5531F7365E8007F017B /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		242EA5551F7365E8007F017B /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		242EA5561F7365E8007F017B /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		242EA5571F7365E8007F017B /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		242EA5581F7365E8007F017B /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		242EA55E1F736E88007F017B /* VoiceHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceHud.h; sourceTree = "<group>"; };
+		242EA55F1F736E88007F017B /* VoiceHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceHud.m; sourceTree = "<group>"; };
+		242EA5611F73A8A8007F017B /* MessageImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageImageCell.h; sourceTree = "<group>"; };
+		242EA5621F73A8A8007F017B /* MessageImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageImageCell.m; sourceTree = "<group>"; };
+		2433EA581F6A4BCC0029B8FA /* talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = talk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2433EA5C1F6A4BCD0029B8FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2433EA5E1F6A4BCD0029B8FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		2433EA5F1F6A4BCD0029B8FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		2433EA611F6A4BCD0029B8FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		2433EA621F6A4BCD0029B8FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		2433EA651F6A4BCD0029B8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2433EA671F6A4BCD0029B8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		2433EA6A1F6A4BCD0029B8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2433EA6C1F6A4BCD0029B8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		2433EA711F6A4BCD0029B8FA /* talkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = talkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2433EA751F6A4BCD0029B8FA /* talkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = talkTests.m; sourceTree = "<group>"; };
+		2433EA771F6A4BCD0029B8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2433EA7C1F6A4BCD0029B8FA /* talkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = talkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2433EA801F6A4BCD0029B8FA /* talkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = talkUITests.m; sourceTree = "<group>"; };
+		2433EA821F6A4BCE0029B8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2433EA8E1F6A5C1E0029B8FA /* TalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TalkViewController.h; path = ../TalkViewController.h; sourceTree = "<group>"; };
+		2433EA8F1F6A5C1E0029B8FA /* TalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TalkViewController.m; path = ../TalkViewController.m; sourceTree = "<group>"; };
+		2433EA911F6A5F250029B8FA /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = ../Message.h; sourceTree = "<group>"; };
+		2433EA921F6A5F250029B8FA /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = ../Message.m; sourceTree = "<group>"; };
+		2433EA931F6A5F250029B8FA /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageCell.h; path = ../MessageCell.h; sourceTree = "<group>"; };
+		2433EA941F6A5F250029B8FA /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageCell.m; path = ../MessageCell.m; sourceTree = "<group>"; };
+		2433EA971F6A6E760029B8FA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "../UIView+Frame.h"; sourceTree = "<group>"; };
+		2433EA981F6A6E760029B8FA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "../UIView+Frame.m"; sourceTree = "<group>"; };
+		24384F341F70F82D004AC411 /* ServerDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerDefs.h; sourceTree = "<group>"; };
+		24384F351F711337004AC411 /* FunctionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionsView.h; sourceTree = "<group>"; };
+		24384F361F711337004AC411 /* FunctionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionsView.m; sourceTree = "<group>"; };
+		24384F381F711453004AC411 /* imageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageCell.h; sourceTree = "<group>"; };
+		24384F391F711453004AC411 /* imageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageCell.m; sourceTree = "<group>"; };
+		24384F3B1F711476004AC411 /* imageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageButton.h; sourceTree = "<group>"; };
+		24384F3C1F711476004AC411 /* imageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageButton.m; sourceTree = "<group>"; };
+		244BA1C11F6F8DD200A25C21 /* InputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputBar.h; sourceTree = "<group>"; };
+		244BA1C21F6F8DD200A25C21 /* InputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputBar.m; sourceTree = "<group>"; };
+		244BA1C41F6F99D300A25C21 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Header.h; path = ../Header.h; sourceTree = "<group>"; };
+		2452AC8C1F74D3AC0084FB0B /* MessageVoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageVoiceCell.h; sourceTree = "<group>"; };
+		2452AC8D1F74D3AC0084FB0B /* MessageVoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageVoiceCell.m; sourceTree = "<group>"; };
+		2AB9A41B78D81340F00DB3C0 /* Pods-talkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-talkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-talkTests/Pods-talkTests.release.xcconfig"; sourceTree = "<group>"; };
+		4938AE8F3B5594C211F668AC /* Pods-talkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-talkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-talkUITests/Pods-talkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E09B514D303D4100B8D3752 /* libPods-talkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-talkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E87E0B11F113DB77B66A34 /* libPods-talk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-talk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7B3BB69FB7BC57A0DB37E9 /* libPods-talkUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-talkUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6A12881A763A1183A2E84C /* Pods-talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-talk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-talk/Pods-talk.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3607408C1C3C430A544252 /* Pods-talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-talk.release.xcconfig"; path = "Pods/Target Support Files/Pods-talk/Pods-talk.release.xcconfig"; sourceTree = "<group>"; };
+		DA017C3B1BEF78A3E44C0F81 /* Pods-talkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-talkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-talkTests/Pods-talkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E534F6221D2EF9CDC6209932 /* Pods-talkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-talkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-talkUITests/Pods-talkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2433EA551F6A4BCC0029B8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24BE8FCF786A65BC02D7857 /* libPods-talk.a in Frameworks */,
+				242EA55B1F7365E8007F017B /* libopencore-amrwb.a in Frameworks */,
+				242EA55A1F7365E8007F017B /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2433EA6E1F6A4BCD0029B8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E4AE1AE20460FF4546C11C /* libPods-talkTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2433EA791F6A4BCD0029B8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510CBB220419D532C5D588A0 /* libPods-talkUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FA4E6A1215435E1952912C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A12881A763A1183A2E84C /* Pods-talk.debug.xcconfig */,
+				CD3607408C1C3C430A544252 /* Pods-talk.release.xcconfig */,
+				DA017C3B1BEF78A3E44C0F81 /* Pods-talkTests.debug.xcconfig */,
+				2AB9A41B78D81340F00DB3C0 /* Pods-talkTests.release.xcconfig */,
+				E534F6221D2EF9CDC6209932 /* Pods-talkUITests.debug.xcconfig */,
+				4938AE8F3B5594C211F668AC /* Pods-talkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		242EA54A1F7365E8007F017B /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				242EA54B1F7365E8007F017B /* amrwapper */,
+				242EA54E1F7365E8007F017B /* lib */,
+				242EA5511F7365E8007F017B /* opencore-amrnb */,
+				242EA5541F7365E8007F017B /* opencore-amrwb */,
+				242EA5571F7365E8007F017B /* VoiceConverter.h */,
+				242EA5581F7365E8007F017B /* VoiceConverter.mm */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		242EA54B1F7365E8007F017B /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				242EA54C1F7365E8007F017B /* amrFileCodec.h */,
+				242EA54D1F7365E8007F017B /* amrFileCodec.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		242EA54E1F7365E8007F017B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				242EA54F1F7365E8007F017B /* libopencore-amrnb.a */,
+				242EA5501F7365E8007F017B /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		242EA5511F7365E8007F017B /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				242EA5521F7365E8007F017B /* interf_dec.h */,
+				242EA5531F7365E8007F017B /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		242EA5541F7365E8007F017B /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				242EA5551F7365E8007F017B /* dec_if.h */,
+				242EA5561F7365E8007F017B /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		242EA55D1F736E5E007F017B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				242EA55E1F736E88007F017B /* VoiceHud.h */,
+				242EA55F1F736E88007F017B /* VoiceHud.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2433EA4F1F6A4BCC0029B8FA = {
+			isa = PBXGroup;
+			children = (
+				2433EA5A1F6A4BCD0029B8FA /* talk */,
+				2433EA741F6A4BCD0029B8FA /* talkTests */,
+				2433EA7F1F6A4BCD0029B8FA /* talkUITests */,
+				2433EA591F6A4BCC0029B8FA /* Products */,
+				1FA4E6A1215435E1952912C6 /* Pods */,
+				CF31E69FA106B733BC36248D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2433EA591F6A4BCC0029B8FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2433EA581F6A4BCC0029B8FA /* talk.app */,
+				2433EA711F6A4BCD0029B8FA /* talkTests.xctest */,
+				2433EA7C1F6A4BCD0029B8FA /* talkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2433EA5A1F6A4BCD0029B8FA /* talk */ = {
+			isa = PBXGroup;
+			children = (
+				24384F331F70F767004AC411 /* Main */,
+				24384F321F70F71F004AC411 /* Controller */,
+				24384F311F70F710004AC411 /* View */,
+				24384F301F70F709004AC411 /* Model */,
+				24384F2F1F70F6DC004AC411 /* Other */,
+				24384F2E1F70F6CC004AC411 /* Tool */,
+				244BA1C01F6F8DBB00A25C21 /* InputBar */,
+			);
+			path = talk;
+			sourceTree = "<group>";
+		};
+		2433EA5B1F6A4BCD0029B8FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2433EA5C1F6A4BCD0029B8FA /* main.m */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2433EA741F6A4BCD0029B8FA /* talkTests */ = {
+			isa = PBXGroup;
+			children = (
+				2433EA751F6A4BCD0029B8FA /* talkTests.m */,
+				2433EA771F6A4BCD0029B8FA /* Info.plist */,
+			);
+			path = talkTests;
+			sourceTree = "<group>";
+		};
+		2433EA7F1F6A4BCD0029B8FA /* talkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2433EA801F6A4BCD0029B8FA /* talkUITests.m */,
+				2433EA821F6A4BCE0029B8FA /* Info.plist */,
+			);
+			path = talkUITests;
+			sourceTree = "<group>";
+		};
+		24384F2E1F70F6CC004AC411 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				242EA54A1F7365E8007F017B /* VoiceConvert */,
+				242EA5471F736429007F017B /* ICFileTool.h */,
+				242EA5481F736429007F017B /* ICFileTool.m */,
+				242EA5441F7363E9007F017B /* ICRecordManager.h */,
+				242EA5451F7363E9007F017B /* ICRecordManager.m */,
+				2433EA971F6A6E760029B8FA /* UIView+Frame.h */,
+				2433EA981F6A6E760029B8FA /* UIView+Frame.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		24384F2F1F70F6DC004AC411 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				244BA1C41F6F99D300A25C21 /* Header.h */,
+				24384F341F70F82D004AC411 /* ServerDefs.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		24384F301F70F709004AC411 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2433EA911F6A5F250029B8FA /* Message.h */,
+				2433EA921F6A5F250029B8FA /* Message.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24384F311F70F710004AC411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				242EA5611F73A8A8007F017B /* MessageImageCell.h */,
+				242EA5621F73A8A8007F017B /* MessageImageCell.m */,
+				2433EA931F6A5F250029B8FA /* MessageCell.h */,
+				2433EA941F6A5F250029B8FA /* MessageCell.m */,
+				2452AC8C1F74D3AC0084FB0B /* MessageVoiceCell.h */,
+				2452AC8D1F74D3AC0084FB0B /* MessageVoiceCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24384F321F70F71F004AC411 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2433EA8E1F6A5C1E0029B8FA /* TalkViewController.h */,
+				2433EA8F1F6A5C1E0029B8FA /* TalkViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24384F331F70F767004AC411 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2433EA5E1F6A4BCD0029B8FA /* AppDelegate.h */,
+				2433EA5F1F6A4BCD0029B8FA /* AppDelegate.m */,
+				2433EA611F6A4BCD0029B8FA /* ViewController.h */,
+				2433EA621F6A4BCD0029B8FA /* ViewController.m */,
+				2433EA641F6A4BCD0029B8FA /* Main.storyboard */,
+				2433EA671F6A4BCD0029B8FA /* Assets.xcassets */,
+				2433EA691F6A4BCD0029B8FA /* LaunchScreen.storyboard */,
+				2433EA6C1F6A4BCD0029B8FA /* Info.plist */,
+				2433EA5B1F6A4BCD0029B8FA /* Supporting Files */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		244BA1C01F6F8DBB00A25C21 /* InputBar */ = {
+			isa = PBXGroup;
+			children = (
+				242EA55D1F736E5E007F017B /* view */,
+				244BA1C11F6F8DD200A25C21 /* InputBar.h */,
+				244BA1C21F6F8DD200A25C21 /* InputBar.m */,
+				24384F351F711337004AC411 /* FunctionsView.h */,
+				24384F361F711337004AC411 /* FunctionsView.m */,
+				24384F381F711453004AC411 /* imageCell.h */,
+				24384F391F711453004AC411 /* imageCell.m */,
+				24384F3B1F711476004AC411 /* imageButton.h */,
+				24384F3C1F711476004AC411 /* imageButton.m */,
+			);
+			path = InputBar;
+			sourceTree = "<group>";
+		};
+		CF31E69FA106B733BC36248D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96E87E0B11F113DB77B66A34 /* libPods-talk.a */,
+				4E09B514D303D4100B8D3752 /* libPods-talkTests.a */,
+				9D7B3BB69FB7BC57A0DB37E9 /* libPods-talkUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2433EA571F6A4BCC0029B8FA /* talk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2433EA851F6A4BCE0029B8FA /* Build configuration list for PBXNativeTarget "talk" */;
+			buildPhases = (
+				DD4BB70B661DA15D0188D0AD /* [CP] Check Pods Manifest.lock */,
+				2433EA541F6A4BCC0029B8FA /* Sources */,
+				2433EA551F6A4BCC0029B8FA /* Frameworks */,
+				2433EA561F6A4BCC0029B8FA /* Resources */,
+				B79088D7751B67841DF9F3E8 /* [CP] Embed Pods Frameworks */,
+				FE18F188D0CC87EB2F1D95BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = talk;
+			productName = talk;
+			productReference = 2433EA581F6A4BCC0029B8FA /* talk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2433EA701F6A4BCD0029B8FA /* talkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2433EA881F6A4BCE0029B8FA /* Build configuration list for PBXNativeTarget "talkTests" */;
+			buildPhases = (
+				38A45703F79B22931B22100A /* [CP] Check Pods Manifest.lock */,
+				2433EA6D1F6A4BCD0029B8FA /* Sources */,
+				2433EA6E1F6A4BCD0029B8FA /* Frameworks */,
+				2433EA6F1F6A4BCD0029B8FA /* Resources */,
+				47462F70CEA268DC092F66E5 /* [CP] Embed Pods Frameworks */,
+				0AEEB169C3F5AAC7B6CD1176 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2433EA731F6A4BCD0029B8FA /* PBXTargetDependency */,
+			);
+			name = talkTests;
+			productName = talkTests;
+			productReference = 2433EA711F6A4BCD0029B8FA /* talkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2433EA7B1F6A4BCD0029B8FA /* talkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2433EA8B1F6A4BCE0029B8FA /* Build configuration list for PBXNativeTarget "talkUITests" */;
+			buildPhases = (
+				95CF371036659E4789031BAD /* [CP] Check Pods Manifest.lock */,
+				2433EA781F6A4BCD0029B8FA /* Sources */,
+				2433EA791F6A4BCD0029B8FA /* Frameworks */,
+				2433EA7A1F6A4BCD0029B8FA /* Resources */,
+				C49D5BA087D585D640BD3F48 /* [CP] Embed Pods Frameworks */,
+				40E44277F315332834DA8D63 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2433EA7E1F6A4BCD0029B8FA /* PBXTargetDependency */,
+			);
+			name = talkUITests;
+			productName = talkUITests;
+			productReference = 2433EA7C1F6A4BCD0029B8FA /* talkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2433EA501F6A4BCC0029B8FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LiBo;
+				TargetAttributes = {
+					2433EA571F6A4BCC0029B8FA = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V9UFB66CM8;
+						ProvisioningStyle = Automatic;
+					};
+					2433EA701F6A4BCD0029B8FA = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2433EA571F6A4BCC0029B8FA;
+					};
+					2433EA7B1F6A4BCD0029B8FA = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2433EA571F6A4BCC0029B8FA;
+					};
+				};
+			};
+			buildConfigurationList = 2433EA531F6A4BCC0029B8FA /* Build configuration list for PBXProject "talk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2433EA4F1F6A4BCC0029B8FA;
+			productRefGroup = 2433EA591F6A4BCC0029B8FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2433EA571F6A4BCC0029B8FA /* talk */,
+				2433EA701F6A4BCD0029B8FA /* talkTests */,
+				2433EA7B1F6A4BCD0029B8FA /* talkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2433EA561F6A4BCC0029B8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2433EA6B1F6A4BCD0029B8FA /* LaunchScreen.storyboard in Resources */,
+				2433EA681F6A4BCD0029B8FA /* Assets.xcassets in Resources */,
+				2433EA661F6A4BCD0029B8FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2433EA6F1F6A4BCD0029B8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2433EA7A1F6A4BCD0029B8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AEEB169C3F5AAC7B6CD1176 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-talkTests/Pods-talkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38A45703F79B22931B22100A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40E44277F315332834DA8D63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-talkUITests/Pods-talkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47462F70CEA268DC092F66E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-talkTests/Pods-talkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95CF371036659E4789031BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B79088D7751B67841DF9F3E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-talk/Pods-talk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49D5BA087D585D640BD3F48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-talkUITests/Pods-talkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD4BB70B661DA15D0188D0AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE18F188D0CC87EB2F1D95BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-talk/Pods-talk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2433EA541F6A4BCC0029B8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				242EA55C1F7365E8007F017B /* VoiceConverter.mm in Sources */,
+				242EA5491F736429007F017B /* ICFileTool.m in Sources */,
+				2433EA631F6A4BCD0029B8FA /* ViewController.m in Sources */,
+				24384F3A1F711453004AC411 /* imageCell.m in Sources */,
+				242EA5461F7363E9007F017B /* ICRecordManager.m in Sources */,
+				2433EA601F6A4BCD0029B8FA /* AppDelegate.m in Sources */,
+				2452AC8E1F74D3AC0084FB0B /* MessageVoiceCell.m in Sources */,
+				24384F371F711337004AC411 /* FunctionsView.m in Sources */,
+				244BA1C31F6F8DD200A25C21 /* InputBar.m in Sources */,
+				242EA5591F7365E8007F017B /* amrFileCodec.mm in Sources */,
+				2433EA951F6A5F250029B8FA /* Message.m in Sources */,
+				2433EA991F6A6E760029B8FA /* UIView+Frame.m in Sources */,
+				2433EA961F6A5F250029B8FA /* MessageCell.m in Sources */,
+				242EA5601F736E88007F017B /* VoiceHud.m in Sources */,
+				24384F3D1F711476004AC411 /* imageButton.m in Sources */,
+				242EA5631F73A8A8007F017B /* MessageImageCell.m in Sources */,
+				2433EA901F6A5C1E0029B8FA /* TalkViewController.m in Sources */,
+				2433EA5D1F6A4BCD0029B8FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2433EA6D1F6A4BCD0029B8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2433EA761F6A4BCD0029B8FA /* talkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2433EA781F6A4BCD0029B8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2433EA811F6A4BCD0029B8FA /* talkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2433EA731F6A4BCD0029B8FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2433EA571F6A4BCC0029B8FA /* talk */;
+			targetProxy = 2433EA721F6A4BCD0029B8FA /* PBXContainerItemProxy */;
+		};
+		2433EA7E1F6A4BCD0029B8FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2433EA571F6A4BCC0029B8FA /* talk */;
+			targetProxy = 2433EA7D1F6A4BCD0029B8FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2433EA641F6A4BCD0029B8FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2433EA651F6A4BCD0029B8FA /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2433EA691F6A4BCD0029B8FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2433EA6A1F6A4BCD0029B8FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2433EA831F6A4BCE0029B8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2433EA841F6A4BCE0029B8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2433EA861F6A4BCE0029B8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6A12881A763A1183A2E84C /* Pods-talk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V9UFB66CM8;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/talk/Header.h";
+				INFOPLIST_FILE = talk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/talk/Tool/VoiceConvert/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.libo.talk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2433EA871F6A4BCE0029B8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3607408C1C3C430A544252 /* Pods-talk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V9UFB66CM8;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/talk/Header.h";
+				INFOPLIST_FILE = talk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/talk/Tool/VoiceConvert/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.libo.talk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2433EA891F6A4BCE0029B8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA017C3B1BEF78A3E44C0F81 /* Pods-talkTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = talkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.libo.talkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/talk.app/talk";
+			};
+			name = Debug;
+		};
+		2433EA8A1F6A4BCE0029B8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB9A41B78D81340F00DB3C0 /* Pods-talkTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = talkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.libo.talkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/talk.app/talk";
+			};
+			name = Release;
+		};
+		2433EA8C1F6A4BCE0029B8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E534F6221D2EF9CDC6209932 /* Pods-talkUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = talkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.libo.talkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = talk;
+			};
+			name = Debug;
+		};
+		2433EA8D1F6A4BCE0029B8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4938AE8F3B5594C211F668AC /* Pods-talkUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = talkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.libo.talkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = talk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2433EA531F6A4BCC0029B8FA /* Build configuration list for PBXProject "talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2433EA831F6A4BCE0029B8FA /* Debug */,
+				2433EA841F6A4BCE0029B8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2433EA851F6A4BCE0029B8FA /* Build configuration list for PBXNativeTarget "talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2433EA861F6A4BCE0029B8FA /* Debug */,
+				2433EA871F6A4BCE0029B8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2433EA881F6A4BCE0029B8FA /* Build configuration list for PBXNativeTarget "talkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2433EA891F6A4BCE0029B8FA /* Debug */,
+				2433EA8A1F6A4BCE0029B8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2433EA8B1F6A4BCE0029B8FA /* Build configuration list for PBXNativeTarget "talkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2433EA8C1F6A4BCE0029B8FA /* Debug */,
+				2433EA8D1F6A4BCE0029B8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2433EA501F6A4BCC0029B8FA /* Project object */;
+}
